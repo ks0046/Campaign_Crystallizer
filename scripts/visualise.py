@@ -13,8 +13,8 @@ st.title("📌 Campaign Issue Crystallizer — Visual Explorer")
 # --- Load Data with Caching ---
 @st.cache_data
 def load_data():
-    cleaned = pd.read_csv("../data/cleaned_posts.csv")
-    planks = pd.read_csv("../data/platform_planks.csv")
+    cleaned = pd.read_csv("scripts/cleaned_posts.csv")
+    planks = pd.read_csv("scripts/platform_planks.csv")
     return cleaned, planks
 
 cleaned_df, planks_df = load_data()
